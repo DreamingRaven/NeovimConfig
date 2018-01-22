@@ -4,11 +4,14 @@ confDir="${HOME}/.config/nvim/" # ~ tilde expansion does not work as variable us
 
 echo "src dir:    ${bashDir}"
 
+sudo pacman -S neovim python-neovim
+# you could subsequentley also:
+# sudo pacman -Sg vim-plugins
+
 # install vim-plug from repo
 #echo "(Re?)-installing vim-plug from junegunn/vim-plug/"
 #curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-
+#plug 'Valloric/YouComplete/Me'
 
 # check if file does not exist
 if [ ! -f "${confDir}init.vim" ]; then
