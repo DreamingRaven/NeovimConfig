@@ -21,7 +21,8 @@ Plug 'neomake/neomake'
 
 Plug 'vim-syntastic/syntastic'
 
-call plug#end()
+"Plug 'scrooloose/nerdtree'
 
+call plug#end()
 
 
