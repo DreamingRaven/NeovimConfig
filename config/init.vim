@@ -17,7 +17,8 @@ endfunction
 
 Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 
-"plug 'https://github.com/Valloric/YouCompleteMe.git'
+Plug 'neomake/neomake'
+
 
 call plug#end()
 
