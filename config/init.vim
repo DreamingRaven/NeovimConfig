@@ -19,6 +19,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 
 Plug 'neomake/neomake'
 
+Plug 'vim-syntastic/syntastic'
 
 call plug#end()
 
