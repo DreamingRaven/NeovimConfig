@@ -21,8 +21,12 @@ Plug 'neomake/neomake'
 
 Plug 'vim-syntastic/syntastic'
 
-"Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
-
+" set {Ctrl+n, Alt+n} = {lineNumbers, noLineNumbers}
+:map <A-n> :set nonumber<CR>
+:map <C-n> :set number<CR>
+" set {Ctrl+space} = {ToggleNerdTree}
+:map <C-space> :NERDTreeToggle<CR>
