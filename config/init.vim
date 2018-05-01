@@ -20,7 +20,11 @@ Plug 'neomake/neomake'
 
 Plug 'vim-syntastic/syntastic'
 
+" nerd tree for nerds + git in tree support
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
