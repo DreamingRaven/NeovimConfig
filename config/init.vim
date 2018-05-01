@@ -30,3 +30,8 @@ call plug#end()
 :map <C-n> :set number<CR>
 " set {Ctrl+space} = {ToggleNerdTree}
 :map <C-space> :NERDTreeToggle<CR>
+" set {Ctrl+[h,j,k,l]} = move window
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
