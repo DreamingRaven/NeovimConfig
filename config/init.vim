@@ -19,6 +19,8 @@ Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 Plug 'neomake/neomake'
 
 Plug 'vim-syntastic/syntastic'
+" syntastic dependency for python (Flake8)
+Plug 'nvie/vim-flake8'
 
 " nerd tree for nerds + git in tree support
 Plug 'scrooloose/nerdtree'
@@ -38,3 +40,8 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+" set Terminal related keybinds (in normal mode && not terminal mode)
+if has('nvim')
+    :tnoremap <Esc> <C-\><C-n>
+    nnoremap <C-t> :below 10sp term://$SHELL<cr>i
+endif
