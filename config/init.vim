@@ -28,7 +28,29 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 
 Plug 'tpope/vim-fugitive'
 
+Plug 'altercation/vim-colors-solarized'
+
+Plug 'itchyny/vim-gitbranch'
+Plug 'itchyny/lightline.vim'
 call plug#end()
+
+" this does nothing yet unless it is put in .vimrc before term colours are set
+let g:lightline = {
+      \ 'colorscheme': 'solarized dark',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'gitbranch#name'
+      \ },
+      \ }
+
+syntax enable
+"set background=dark
+"colorscheme solarized
+
+
 
 " set {Ctrl+n, Alt+n} = {lineNumbers, noLineNumbers}
 :map <A-n> :set nonumber<CR>
